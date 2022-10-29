@@ -1,10 +1,85 @@
-body  {
-    
+.body {
+    width: 100%;
+    height: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.project-img {
+    width: 90%;
+    height: auto;
+}
+#navbarSupportedContent>ul>li>a {
+    text-align: right;
+    color: azure;
+}
+.navbar-brand>h1 {
+    color: azure;
+    font-weight: bolder;
+}
+#navbar-toggler {
+    color: azure;
+}
+.navbar-toggler {
+    background-image: url(../../assets/img/background.png);
+}
+#main-navbar {
+    transition: 1s;
+}
+#Vangogh {
+    width: 400px;
+    height: auto;
+}
+
+.youtube:hover {
+    color: red;
+}
+
+.github:hover {
+    color: purple;
+}
+.lust:hover {
+    color: pink;
+}
+.icon {
+    font-size: 48px;
+    margin: 10px;
+    color: black;
+    transition: color 0.25s;
+    z-index: 1;
 }
 p {
     font-size: 25px;
 }
-#Vangogh {
-   width: 400px;
-   height: auto;
+.sticky>.navbar>.container-fluid>.navbar-brand {
+    display: none
+}
+
+@media only screen and (min-width: 100px) {
+    .navbar-brand {
+        display: none;
+    }
+    .mobile-name {
+        display: block;
+        text-align: center;
+        background-color: azure;
+    }    
+    .project-description {
+        margin:3.5vh 2.5vw 2.5vh 2.5vw;
+        padding: 0vh 2.5vw 0vh 2.5vw;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .navbar-brand {
+        display: flex;
+    }
+    .mobile-name {
+        display: none;
+    }
+    .project-description {
+        margin: 0;
+        padding: 3.5vh 2.5vw 2.5vh 2.5vw;
+    }
 }

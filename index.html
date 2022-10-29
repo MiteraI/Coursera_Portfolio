@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio Bruv</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -15,70 +16,245 @@
     <!--Import custom css-->
     <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Vincent Willem van Gogh</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <div id="start"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark p-1" id="main-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#intro">
+                    <h1>VINCENT WILLEM VAN GOGH</h1>
+                </a>
+                <button class="navbar-toggler m-2" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#start">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h3>Link</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <h3>Dropdown</h3>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <br>
-    <div class="container-fluid">
+        </nav>
+    </header>
+    <br><br><br><br><br>
+    <div class="shadow-lg p-1 m-2 mobile-name rounded">
+        <h2 class="mobile-name">VINCENT WILLEM VAN GOGH</h2>
+    </div>
+    <br><br>
+    <div class="container-fluid" id="intro">
         <h1 style="margin:0% auto 0% 4%">About me</h1>
+        <br>
         <div class="row">
             <div class="col-sm-12 col-lg-4">
                 <br>
                 <div class="d-flex  justify-content-center">
-                    <img class="img-fluid rounded-4" id="Vangogh" src="assets/img/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" alt="Vangogh">
+                    <img class="img-fluid rounded-4" id="Vangogh"
+                        src="assets/img/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" alt="Vangogh">
                 </div>
-                <br>
+
                 <div class="d-flex justify-content-center">
-                    <a href="http://youtube.com">youtube</a>
+                    <a class="icon youtube" href="http://youtube.com" target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                    <a class="icon github" href="http://github.com/MiteraI" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                        </ion-icon>
+                    </a>
+                    <a class="icon facebook" href="http://facebook.com/profile.php?id=100007229958372" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a class="icon lust" href="http://nhentai.net" target="_blank">
+                        <ion-icon name="heart-circle-outline"></ion-icon>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-8">
                 <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quas consequuntur beatae atque odio alias, corrupti, earum eos molestiae laboriosam, repudiandae eum. Fugiat nisi reiciendis a debitis qui hic id.
-                    </p>
-                </div>
+                <p style="margin:2%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quas consequuntur
+                    beatae atque odio
+                    alias, corrupti, earum eos molestiae laboriosam, repudiandae eum. Fugiat nisi reiciendis a debitis
+                    qui hic id.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellendus adipisci neque dignissimos
+                    soluta, voluptatem, debitis ullam dolorem alias corrupti provident nulla ipsa! Nihil, placeat!
+                </p>
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><hr style="width:70%; margin: auto;">
+    </div>
+    <br><br><br><br><br>
+    <hr style="width:70%; margin: auto;">
+    <br>
+    <h2 style="text-align:center;">PROJECTS</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h4>Tried REACT</h4>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img class="project-img" src="assets/img/Screenshot 2022-10-29 210523.png" alt="React Project">
+                </div>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum distinctio voluptas sint
+                    quae. Neque exercitationem beatae, sequi soluta nulla maiores odit praesentium ullam quod, id
+                    explicabo? Dolorem delectus aspernatur repudiandae, fugit officia qui illo sed, ex nihil unde nobis
+                    neque. Alias labore delectus fugiat assumenda tempore quis omnis optio?
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h4>Tried REACT</h4>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img class="project-img" src="assets/img/Screenshot 2022-10-29 210523.png" alt="React Project">
+                </div>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum distinctio voluptas sint
+                    quae. Neque exercitationem beatae, sequi soluta nulla maiores odit praesentium ullam quod, id
+                    explicabo? Dolorem delectus aspernatur repudiandae, fugit officia qui illo sed, ex nihil unde nobis
+                    neque. Alias labore delectus fugiat assumenda tempore quis omnis optio?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h4>Tried REACT</h4>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img class="project-img" src="assets/img/Screenshot 2022-10-29 210523.png" alt="React Project">
+                </div>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum distinctio voluptas sint
+                    quae. Neque exercitationem beatae, sequi soluta nulla maiores odit praesentium ullam quod, id
+                    explicabo? Dolorem delectus aspernatur repudiandae, fugit officia qui illo sed, ex nihil unde nobis
+                    neque. Alias labore delectus fugiat assumenda tempore quis omnis optio?
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h4>Tried REACT</h4>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img class="project-img" src="assets/img/Screenshot 2022-10-29 210523.png" alt="React Project">
+                </div>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum distinctio voluptas sint
+                    quae. Neque exercitationem beatae, sequi soluta nulla maiores odit praesentium ullam quod, id
+                    explicabo? Dolorem delectus aspernatur repudiandae, fugit officia qui illo sed, ex nihil unde nobis
+                    neque. Alias labore delectus fugiat assumenda tempore quis omnis optio?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h4>Tried REACT</h4>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img class="project-img" src="assets/img/Screenshot 2022-10-29 210523.png" alt="React Project">
+                </div>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum distinctio voluptas sint
+                    quae. Neque exercitationem beatae, sequi soluta nulla maiores odit praesentium ullam quod, id
+                    explicabo? Dolorem delectus aspernatur repudiandae, fugit officia qui illo sed, ex nihil unde nobis
+                    neque. Alias labore delectus fugiat assumenda tempore quis omnis optio?
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <h4>Tried REACT</h4>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img class="project-img" src="assets/img/Screenshot 2022-10-29 210523.png" alt="React Project">
+                </div>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum distinctio voluptas sint
+                    quae. Neque exercitationem beatae, sequi soluta nulla maiores odit praesentium ullam quod, id
+                    explicabo? Dolorem delectus aspernatur repudiandae, fugit officia qui illo sed, ex nihil unde nobis
+                    neque. Alias labore delectus fugiat assumenda tempore quis omnis optio?
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <hr style="width:70%; margin: auto;">
+    <br><br><br><br>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <br>
+                    <h3>Huynh Anh Kiet .Inc</h3>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-end">
+                        <a class="icon youtube" href="http://youtube.com" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                        <a class="icon github" href="http://github.com/MiteraI" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                            </ion-icon>
+                        </a>
+                        <a class="icon facebook" href="http://facebook.com/profile.php?id=100007229958372"
+                            target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a class="icon lust" href="http://nhentai.net" target="_blank">
+                            <ion-icon name="heart-circle-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br><br><br><br>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+            document.getElementById("navbarSupportedContent").classList.toggle('justify-content-center', window.scrollY > 0);
+        })
+    </script>
 </body>
+
 </html>
