@@ -51,7 +51,7 @@ header {
     z-index: 1;
 }
 p {
-    font-size: 25px;
+    font-size: 18px;
 }
 .sticky>.navbar>.container-fluid>.navbar-brand {
     display: none
