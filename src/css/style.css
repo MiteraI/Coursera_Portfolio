@@ -12,8 +12,19 @@ header {
     height: auto;
 }
 #navbarSupportedContent>ul>li>a {
-    text-align: right;
     color: azure;
+}
+.navbar-collapse {
+    justify-content: end;
+}
+.transform-right {
+    transform: translateX(0%);
+    transition: transform 1000ms;
+}
+.transform-center {
+    position: relative;  
+    transform: translateX(-60%);
+    transition: transform 1000ms;
 }
 .navbar-brand>h1 {
     color: azure;
@@ -54,8 +65,10 @@ p {
     font-size: 18px;
 }
 .sticky>.navbar>.container-fluid>.navbar-brand {
-    display: none
+    transform: translateX(-130%);
+    transition: 1000ms;
 }
+
 
 @media only screen and (min-width: 100px) {
     .navbar-brand {

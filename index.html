@@ -30,7 +30,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse transform-right" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#start">
@@ -249,7 +249,8 @@
         window.addEventListener("scroll", function () {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 135);
-            document.getElementById("navbarSupportedContent").classList.toggle('justify-content-center', window.scrollY > 135);
+            document.getElementById("navbarSupportedContent").classList.toggle('transform-center', window.scrollY > 135);
+            document.querySelector("navbar-brand").classList.toggle('appear',window.scrollY < 135)
         })
     </script>
 </body>
